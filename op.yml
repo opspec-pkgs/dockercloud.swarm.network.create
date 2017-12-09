@@ -1,0 +1,33 @@
+name: github.com/opspec-pkgs/dockercloud.swarm.network.create
+description: creates a dockercloud swarm network (if it doesn't exist)
+inputs:
+  dockerUsername:
+    string:
+      description: docker username
+  dockerPassword:
+    string:
+      description: docker password
+      isSecret: true
+  swarm:
+    string:
+      description: swarm network will be added to in format "ORG_OR_USER_NAME/SWARM_NAME"
+  networkName:
+    string:
+      description: name of the network
+  networkDriver:
+    string:
+      description: network driver of the network
+      default: overlay
+version: 1.0.0
+run:
+  container:
+    image: { ref: 'opspecpkgs/dockercloud.swarm.network.create:1.0.0' }
+    files:
+      /cmd.sh:
+    cmd: [ /cmd.sh ]
+    envVars:
+      DOCKER_USER: $(dockerUsername)
+      DOCKER_PASS: $(dockerPassword)
+      SWARM_NAME: $(swarm)
+      networkName: $(networkName)
+      networkDriver: $(networkDriver)
