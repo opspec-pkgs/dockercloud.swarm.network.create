@@ -30,9 +30,9 @@ op:
   inputs:
     dockerUsername:
     dockerPassword:
-    qualifiedSwarmName:
+    swarm:
     networkName:
-    # end optional args
+    # begin optional args
     networkDriver:
     # end optional args
 ```
