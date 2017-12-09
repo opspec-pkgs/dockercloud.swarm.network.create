@@ -1,5 +1,5 @@
 name: github.com/opspec-pkgs/dockercloud.swarm.network.create
-description: creates a dockercloud swarm network (if it doesn't exist)
+description: creates a network in a dockercloud swarm (if it doesn't exist)
 inputs:
   dockerUsername:
     string:

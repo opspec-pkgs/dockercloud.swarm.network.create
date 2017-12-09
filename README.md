@@ -1,14 +1,12 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/dockercloud.swarm.network.create.svg?branch=master)](https://travis-ci.org/opspec-pkgs/dockercloud.swarm.network.create)
 
 # Problem statement
-creates a dockercloud swarm network (if it doesn't exist)
+creates a network in a dockercloud swarm (if it doesn't exist)
 
 # Known limitations
 requires node capable of running containers w/ overlay2 filesystem
 
 # Example usage
-
-> note: in examples, VERSION represents a version of the dockercloud.swarm.network.create pkg
 
 ## install
 
