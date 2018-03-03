@@ -1,26 +1,30 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/dockercloud.swarm.network.create.svg?branch=master)](https://travis-ci.org/opspec-pkgs/dockercloud.swarm.network.create)
 
+<img src="icon.svg" alt="icon" height="100px">
+
 # Problem statement
+
 creates a network in a dockercloud swarm (if it doesn't exist)
 
-# Known limitations
-requires node capable of running containers w/ overlay2 filesystem
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
 
 # Example usage
 
-## install
+## Install
 
 ```shell
 opctl pkg install github.com/opspec-pkgs/dockercloud.swarm.network.create#1.0.0
 ```
 
-## run
+## Run
 
 ```
 opctl run github.com/opspec-pkgs/dockercloud.swarm.network.create#1.0.0
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
@@ -30,15 +34,16 @@ op:
     dockerPassword:
     swarm:
     networkName:
-    # begin optional args
+    # params w/ default
     networkDriver:
-    # end optional args
 ```
 
 # Support
 
-join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
-or [open an issue](https://github.com/opspec-pkgs/dockercloud.swarm.network.create/issues)
+join us on
+[![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or
+[open an issue](https://github.com/opspec-pkgs/dockercloud.swarm.network.create/issues)
 
 # Releases
 
@@ -49,4 +54,5 @@ and [tagged](https://git-scm.com/book/en/v2/Git-Basics-Tagging); see
 
 # Contributing
 
-see [project/CONTRIBUTING.md](https://github.com/opspec-pkgs/project/blob/master/CONTRIBUTING.md)
+see
+[project/CONTRIBUTING.md](https://github.com/opspec-pkgs/project/blob/master/CONTRIBUTING.md)
