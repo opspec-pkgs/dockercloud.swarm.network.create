@@ -18,10 +18,10 @@ inputs:
     string:
       description: network driver of the network
       default: overlay
-version: 1.0.0
+version: 1.1.0
 run:
   container:
-    image: { ref: 'opspecpkgs/dockercloud.swarm.network.create:1.0.0' }
+    image: { ref: 'opspecpkgs/dockercloud.swarm.network.create:1.1.0' }
     files:
       /cmd.sh:
     cmd: [ /cmd.sh ]
@@ -29,5 +29,5 @@ run:
       DOCKER_USER: $(dockerUsername)
       DOCKER_PASS: $(dockerPassword)
       SWARM_NAME: $(swarm)
-      networkName: $(networkName)
-      networkDriver: $(networkDriver)
+      networkName:
+      networkDriver:
